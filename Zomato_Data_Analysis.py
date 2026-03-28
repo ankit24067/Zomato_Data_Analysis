@@ -3,9 +3,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import os
+port = int(os.environ.get("PORT", 8501))
 # Page config
 st.set_page_config(page_title="Zomato Data Analysis", layout="wide")
+
+st.write("Running on port:", port)
 
 # Title
 st.title("🍽️ Zomato Restaurant Data Analysis")
